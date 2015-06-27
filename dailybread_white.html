@@ -57,11 +57,11 @@ title: The Daily Bread
 
 
     var db = new OpenSpending.DailyBread($('#dailybread'), {
-    {% if site.dailybread -%}
+    {% if site.dailybread %}
       country: '{{site.dailybread.country}}',
       symbol: '{{site.dailybread.symbol}}',
       taxman: {year: '{{site.dailybread.year}}'},
-      {% if site.dailybread.salary -%}
+      {% if site.dailybread.salary %}
       minimumsalary: {{site.dailybread.salary.minimum}},
       maximumsalary: {{site.dailybread.salary.maximum}},
       salarystep: {{site.dailybread.salary.step}},
